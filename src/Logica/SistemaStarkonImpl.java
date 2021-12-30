@@ -43,26 +43,26 @@ public class SistemaStarkonImpl implements SistemaStarkon{
     }
 
     @Override
-    public void ingresarEnvioDocumento(int codigo, String rutRemitente, String rutDestinatario, double peso, double grosor) {
+    public void ingresarEnvioDocumento(String codigo, String rutRemitente, String rutDestinatario, double peso, double grosor) {
         Envio e = new EnvioDocumento(codigo,rutRemitente,rutDestinatario,peso,grosor);
         listaEnvios.ingresar(e);
         
     }
 
     @Override
-    public void ingresarEnvioValija(int codigo, String rutRemitente, String rutDestinatario, String material, double peso) {
+    public void ingresarEnvioValija(String codigo, String rutRemitente, String rutDestinatario, String material, double peso) {
         Envio e = new EnvioValija(codigo,rutRemitente,rutDestinatario,material,peso);
         listaEnvios.ingresar(e);
     }
 
     @Override
-    public void ingresarEnvioEncomienda(int  codigo, String rutRemitente, String rutDestinatario, double peso, double largo, double ancho, double profundidad) {
+    public void ingresarEnvioEncomienda(String  codigo, String rutRemitente, String rutDestinatario, double peso, double largo, double ancho, double profundidad) {
         Envio e = new EnvioEncomienda(codigo,rutRemitente,rutDestinatario,peso,largo,ancho,profundidad);
         listaEnvios.ingresar(e);
     }
 
     @Override
-    public void asociarClienteEnvio(String rut, int codigo) {
+    public void asociarClienteEnvio(String rut, String codigo) {
          
     }
 
