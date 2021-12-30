@@ -13,7 +13,7 @@ public class EnvioValija extends Envio{
     private String material;
     private double peso;
 
-    public EnvioValija(int codigo, String rutRemitente, String rutDestinatario,String material, double peso) {
+    public EnvioValija(String codigo, String rutRemitente, String rutDestinatario,String material, double peso) {
         super(codigo,  rutRemitente, rutDestinatario);
         this.material = material;
         this.peso = peso;
