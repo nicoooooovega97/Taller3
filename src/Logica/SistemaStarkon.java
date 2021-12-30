@@ -14,13 +14,13 @@ public interface SistemaStarkon {
     
     public void ingresarCliente(String rut, String nombre, String apellido, double saldo, String ciudadOrigen);
     
-    public void ingresarEnvioDocumento(int codigo, String rutRemitente, String rutDestinatario, double peso, double grosor);
+    public void ingresarEnvioDocumento(String codigo, String rutRemitente, String rutDestinatario, double peso, double grosor);
 
-    public void ingresarEnvioValija(int codigo, String rutRemitente, String rutDestinatario, String material, double peso);
+    public void ingresarEnvioValija(String codigo, String rutRemitente, String rutDestinatario, String material, double peso);
 
-    public void ingresarEnvioEncomienda(int codigo, String rutRemitente, String rutDestinatario, double peso, double largo, double ancho, double profundidad);
+    public void ingresarEnvioEncomienda(String codigo, String rutRemitente, String rutDestinatario, double peso, double largo, double ancho, double profundidad);
 	
-    public void asociarClienteEnvio(String rut, int codigo);
+    public void asociarClienteEnvio(String rut, String codigo);
 	
     public void realizarEntrega(String rutR, String rutD);
 	
