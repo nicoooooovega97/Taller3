@@ -13,7 +13,7 @@ public class EnvioDocumento extends Envio{
     private double peso;
     private double grosor;
 
-    public EnvioDocumento(int codigo, String rutRemitente, String rutDestinatario,double peso,double grosor) {
+    public EnvioDocumento(String codigo, String rutRemitente, String rutDestinatario,double peso,double grosor) {
         super(codigo, rutRemitente, rutDestinatario);
         this.peso = peso;
         this.grosor = grosor;
