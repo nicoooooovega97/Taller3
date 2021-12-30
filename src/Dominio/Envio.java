@@ -10,21 +10,21 @@ package Dominio;
  * @author S41-70
  */
 public abstract class Envio {
-    private int codigo;
+    private String codigo;
     private String rutRemitente;
     private String rutDestinatario;
 
-    public Envio(int codigo, String rutRemitente, String rutDestinatario) {
+    public Envio(String codigo, String rutRemitente, String rutDestinatario) {
         this.codigo = codigo;
         this.rutRemitente = rutRemitente;
         this.rutDestinatario = rutDestinatario;
     }
 
-    public int getCodigo() {
+    public String getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(int codigo) {
+    public void setCodigo(String codigo) {
         this.codigo = codigo;
     }
 
