@@ -15,7 +15,7 @@ public class EnvioEncomienda extends Envio{
     private double ancho;
     private double profundidad;
 
-    public EnvioEncomienda(int codigo,  String rutRemitente, String rutDestinatario,double peso, double largo,double ancho,double profundidad) {
+    public EnvioEncomienda(String codigo,  String rutRemitente, String rutDestinatario,double peso, double largo,double ancho,double profundidad) {
         super(codigo, rutRemitente, rutDestinatario);
         this.peso =  peso;
         this.largo = largo;
